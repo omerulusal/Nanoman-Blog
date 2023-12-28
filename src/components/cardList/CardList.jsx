@@ -1,8 +1,11 @@
 import React from 'react'
 import "./_cardList.scss"
+import Pagination from '../pagination/Pagination'
 const CardList = () => {
     return (
-        <div>CardList</div>
+        <div>
+            <Pagination />
+        </div>
     )
 }
 

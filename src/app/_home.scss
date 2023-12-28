@@ -1,11 +1,9 @@
-@import "../components/module/palette.scss";
-
 .home {
     max-width: 1536px;
     margin: 0 auto;
     padding: 0 80px;
-    background-color: $bg-color;
-    color: $text-color;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
 }
 
 

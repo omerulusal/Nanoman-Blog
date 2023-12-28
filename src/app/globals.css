@@ -1,3 +1,15 @@
+:root {
+    --bg: #f5f5f5;
+    --softBg: #f0f0f0;
+    --soft-bg-2: #D9D9D9;
+    --color: #262626;
+    --color-2: #454545;
+    --soft-text-color: #8b816f;
+    --primary-color: #eed6ac;
+    --secondary-color: #68635a;
+    --third-color: #ae9f84;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +28,22 @@ a {
     color: inherit;
 }
 
+.dark {
+    --bg: #262626;
+    --color: #f5f5f5;
+}
+
+.light {
+    --bg: #f5f5f5;
+    --softBg: #f0f0f0;
+    --soft-bg-2: #D9D9D9;
+    --color: #262626;
+    --color-2: #454545;
+}
+
 .container {
     min-height: 100vh;
     margin: 0 auto;
-    background-color: #f5f5f5;
-    color: #262626;
+    background-color: var(--bg);
+    color: var(--color);
 }

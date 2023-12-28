@@ -1,0 +1,45 @@
+.toogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ico-1 {
+    padding-left: 2px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: small;
+}
+
+.ico-2 {
+    padding-right: 2px;
+    cursor: pointer;
+    z-index: 11;
+    font-size: small;
+
+}
+
+.ball {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--soft-bg-2);
+    cursor: pointer;
+    left: 5px;
+    transition: 0.5s;
+    z-index: 21;
+}
