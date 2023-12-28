@@ -9,3 +9,58 @@
         font-weight: bolder;
     }
 }
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+
+    .line {
+        width: 25px;
+        height: 2px;
+        background-color: var(--color);
+        transition: all .3s ease-in;
+    }
+}
+
+.responsiveMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg);
+    height: calc(100vh - 100px);
+    display: none;
+    z-index: 999;
+}
+
+@media screen and (max-width: 640px) {
+    .burger {
+        display: flex;
+        height: 15px;
+
+        .line {
+            width: 20px;
+            height: 2px;
+        }
+
+        .responsiveMenu {
+            display: block;
+        }
+    }
+
+    .responsiveMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .page {
+        display: none;
+    }
+}

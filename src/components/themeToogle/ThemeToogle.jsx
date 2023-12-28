@@ -10,9 +10,16 @@ const ThemeToogle = () => {
             <div className='line' />
             <div className="ico-1" >☀️</div>
             <div className="ico-2" >🌕</div>
-            <div className='ball' />
+            <div className='ball'
+                style={theme === "dark" ? { left: "22px" } : { right: "2px" }}
+            />
         </div>
     )
 }
 
 export default ThemeToogle
+
+/*
+toogle'a tıklayınca ThemeContextProvider'ta tanımlanan 'toogle' fonksiyonu tetiklenir.
+bu fonksiyon icerisinde setTheme ile theme state'i guncellenir.
+*/

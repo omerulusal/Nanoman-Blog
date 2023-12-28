@@ -4,42 +4,106 @@
     justify-content: center;
     gap: 1px;
     position: relative;
+
+    .line {
+        position: absolute;
+        width: 35px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: var(--color);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .ico-1 {
+        padding-left: 2px;
+        cursor: pointer;
+        z-index: 10;
+        font-size: small;
+    }
+
+    .ico-2 {
+        padding-right: 2px;
+        cursor: pointer;
+        z-index: 11;
+        font-size: small;
+
+    }
+
+    .ball {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: var(--soft-bg-2);
+        cursor: pointer;
+        left: 5px;
+        transition: 0.5s;
+        z-index: 21;
+    }
+
 }
 
-.line {
-    position: absolute;
-    width: 35px;
-    height: 20px;
-    border-radius: 50px;
-    background-color: var(--color);
-    cursor: pointer;
-    transition: 0.5s;
+
+
+
+// Media Queries
+@media screen and (max-width: 1536px) {
+    .toogle {
+        max-width: 1366px;
+    }
 }
 
-.ico-1 {
-    padding-left: 2px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: small;
+@media screen and (max-width: 1280px) {
+    .toogle {
+        max-width: 1024px;
+    }
 }
 
-.ico-2 {
-    padding-right: 2px;
-    cursor: pointer;
-    z-index: 11;
-    font-size: small;
+@media screen and (max-width: 1024px) {
+    .toogle {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toogle {
+        max-width: 640px;
+
+        .line {
+            width: 30px;
+            height: 12px;
+        }
+
+        .ico-1 {
+            font-size: x-small;
+            padding-left: 6px;
+        }
+
+        .ico-2 {
+            padding-right: 6px;
+            font-size: x-small;
+        }
+
+        .ball {
+            width: 12px;
+            height: 12px;
+            left: 6px;
+        }
+    }
 
 }
 
-.ball {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--soft-bg-2);
-    cursor: pointer;
-    left: 5px;
-    transition: 0.5s;
-    z-index: 21;
+@media screen and (max-width: 640px) {
+    .toogle {
+        max-width: 475px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .toogle {
+        max-width: 360px;
+        display: none;
+    }
 }
