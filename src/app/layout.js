@@ -1,7 +1,9 @@
+import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
+import Footer from '@/components/footer/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const Nunito = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Blog App',
@@ -11,7 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={Nunito.className}>
+        <div className='container'>
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }
