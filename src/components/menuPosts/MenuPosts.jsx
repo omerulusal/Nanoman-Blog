@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import './_menuPosts.scss'
-const MenuPosts = () => {
+const MenuPosts = ({ withImg }) => {
     return (
         <div className='menuPosts'>
             <Link href="/" className="menuPostItem">
-                <div className="menuPostImageContainer">
-                    <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
-                    />
-                </div>
+                {withImg && (
+                    <div className="menuPostImageContainer">
+                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        />
+                    </div>
+                )}
                 <div className="menuPostText">
                     <span className="menuPostTravel">Travel</span>
                     <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
@@ -21,12 +23,14 @@ const MenuPosts = () => {
 
 
             <Link href="/" className="menuPostItem">
-                <div className="menuPostImageContainer">
-                    <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
-                    />
-                </div>
+                {withImg && (
+                    <div className="menuPostImageContainer">
+                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        />
+                    </div>
+                )}
                 <div className="menuPostText">
-                    <span className="menuPostCulture">Travel</span>
+                    <span className="menuPostCulture">Culture</span>
                     <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
@@ -37,12 +41,14 @@ const MenuPosts = () => {
 
 
             <Link href="/" className="menuPostItem">
-                <div className="menuPostImageContainer">
-                    <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
-                    />
-                </div>
+                {withImg && (
+                    <div className="menuPostImageContainer">
+                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        />
+                    </div>
+                )}
                 <div className="menuPostText">
-                    <span className="menuPostFood">Travel</span>
+                    <span className="menuPostFood">Food</span>
                     <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
@@ -53,12 +59,14 @@ const MenuPosts = () => {
 
 
             <Link href="/" className="menuPostItem">
-                <div className="menuPostImageContainer">
-                    <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
-                    />
-                </div>
+                {withImg && (
+                    <div className="menuPostImageContainer">
+                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        />
+                    </div>
+                )}
                 <div className="menuPostText">
-                    <span className="menuPostFashion">Travel</span>
+                    <span className="menuPostFashion">Fashion</span>
                     <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>

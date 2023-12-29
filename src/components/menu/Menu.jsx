@@ -13,7 +13,7 @@ const Menu = () => {
             <MenuCategories />
             <h2 className="menuSubTitle">Chosen by the editor</h2>
             <h1 className="menuTitle">Editors Pick</h1>
-            <MenuPosts />
+            <MenuPosts withImg={true} />
         </div>
     )
 }

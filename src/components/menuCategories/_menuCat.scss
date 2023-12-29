@@ -1,0 +1,241 @@
+.McategoryList {
+    .Mtitle{
+        margin: 50px 0px;
+    }
+    
+    .Mcategories {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        margin-bottom: 2rem;
+
+    }
+
+
+    .Mstyle {
+        background-color: #57c4ff31;
+        display: flex;
+        font-size: x-small;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        text-transform: capitalize;
+        width: 25%;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .Mfashion {
+        background-color: #da85c731;
+        display: flex;
+        font-size: x-small;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        text-transform: capitalize;
+        width: 25%;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+
+    }
+
+    .Mfood {
+        background-color: #7fb88133;
+        display: flex;
+        font-size: x-small;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        text-transform: capitalize;
+        width: 25%;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+
+    }
+
+    .Mtravel {
+        background-color: #ff795736;
+        display: flex;
+        font-size: x-small;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        text-transform: capitalize;
+        width: 25%;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+
+    }
+
+    .Mculture {
+        background-color: #ffb04f45;
+        display: flex;
+        font-size: x-small;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        text-transform: capitalize;
+        width: 25%;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .Mcoding {
+        background-color: #5e4fff31;
+        display: flex;
+        font-size: x-small;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        text-transform: capitalize;
+        width: 25%;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .MCategoryimage {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .Mstyle {
+        display: flex;
+        gap: 1px;
+        font-size: small;
+        width: 10%;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Mstyle {
+        display: flex;
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .Mfashion {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .Mfood {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .Mtravel {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .Mculture {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .Mcoding {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .categories {
+        flex-wrap: nowrap;
+    }
+
+    .Mstyle {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .Mfashion {
+        gap: .2px !important;
+        width: 7%;
+        padding: 0 5px !important;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .Mfood {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .Mtravel {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .Mculture {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .Mcoding {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
