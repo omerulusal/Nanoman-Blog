@@ -1,0 +1,21 @@
+.menu {
+    flex: 2;
+    margin-top: 88px;
+
+    .menuSubTitle {
+        color: gray;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .menuTitle {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}

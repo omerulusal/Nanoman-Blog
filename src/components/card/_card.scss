@@ -1,0 +1,52 @@
+.card {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .cardImage {
+        flex: 1;
+        height: 350px;
+        position: relative;
+
+        .cardImg {
+            object-fit: cover;
+        }
+    }
+
+    .cardText {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cardDate {
+        color: gray;
+    }
+
+    .cardCategory {
+        color: crimson;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+
+    .cardDesc {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--softTextColor);
+    }
+
+    .cardLink {
+        border-bottom: 1px solid crimson;
+        width: max-content;
+        padding: 2px 0px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cardImage {
+        display: none;
+    }
+}

@@ -9,7 +9,7 @@ export default function Home() {
       <span className="light">
         <Featured />
         <CategoryList />
-        <div>
+        <div className="homeContent">
           <CardList />
           <Menu />
         </div>

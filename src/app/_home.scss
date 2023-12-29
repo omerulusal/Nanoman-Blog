@@ -4,6 +4,10 @@
     padding: 0 80px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
+    .homeContent{
+        display: flex;
+        gap: 50px;
+    }
 }
 
 

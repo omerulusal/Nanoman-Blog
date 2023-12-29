@@ -1,0 +1,14 @@
+.cardlist {
+    flex: 5;
+
+    .cListTitle {
+        font-size: 38px;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+    .cListPosts{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
