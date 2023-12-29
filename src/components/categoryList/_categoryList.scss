@@ -1,0 +1,217 @@
+.categoryList {
+    .title {
+        margin: 50px 0px;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+
+    .style {
+        background-color: #57c4ff31;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        width: 15%;
+        height: 60px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .fashion {
+        background-color: #da85c731;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        width: 15%;
+        height: 60px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .food {
+        background-color: #7fb88133;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        width: 15%;
+        height: 60px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .travel {
+        background-color: #ff795736;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        width: 15%;
+        height: 60px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .culture {
+        background-color: #ffb04f45;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        width: 15%;
+        height: 60px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .coding {
+        background-color: #5e4fff31;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        width: 15%;
+        height: 60px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .Categoryimage {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .style {
+        display: flex;
+        gap: 1px;
+        font-size: small;
+        width: 10%;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .style {
+        display: flex;
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .fashion {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .food {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .travel {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .culture {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+
+    .coding {
+        gap: 1px;
+        font-size: x-small;
+        width: 10%;
+        height: 45px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .categories {
+        flex-wrap: nowrap;
+    }
+
+    .style {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .fashion {
+        gap: .2px !important;
+        width: 7%;
+        padding: 0 5px !important;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .food {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .travel {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .culture {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .coding {
+        gap: .2px !important;
+        width: 7%;
+        height: 45px !important;
+
+        .Categoryimage {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
