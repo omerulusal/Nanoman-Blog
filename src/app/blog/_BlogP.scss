@@ -1,0 +1,19 @@
+.blog {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 100px;
+    padding-top: 10px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+.bTitle {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.blogContent {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}

@@ -1,0 +1,111 @@
+.singleP {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 100px;
+    padding-top: 10px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+
+    .sInfoContainer {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .sTextContainer {
+            flex: 1;
+
+            .sTitle {
+                font-size: 64px;
+                margin-bottom: 50px;
+            }
+
+            .sUser {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .sUserImgContainer {
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+
+            .sAvatar {
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .sUserTextContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                color: var(--softTextColor);
+            }
+
+            .sUserName {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+
+        .sImgContainer {
+            flex: 1;
+            height: 350px;
+            position: relative;
+        }
+
+        .sUserImg {
+            object-fit: cover;
+        }
+    }
+
+
+    .sContent {
+        display: flex;
+        gap: 50px;
+
+        .sPost {
+            flex: 5;
+            margin-top: 60px;
+        }
+
+        .description p {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1536px) {
+    .sTitle {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sTitle {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sTitle{
+        font-size: 44px !important;
+    }
+    .sImgContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sTitle {
+        font-size: 36px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+}
