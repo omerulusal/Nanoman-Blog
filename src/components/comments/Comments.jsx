@@ -25,6 +25,9 @@ const Comments = () => {
                             <span className="cDate" >01.01.2025</span>
                         </div>
                     </div>
+                    <p className="cDesc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eius similique facilis quo fugit fuga sint ullam, tempore blanditiis dolor cum nisi accusantium sequi dolore, exercitationem, est itaque? Cumque, voluptas.
+                    </p>
                 </div>
             </div>
         </div>
