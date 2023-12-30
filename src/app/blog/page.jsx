@@ -2,12 +2,14 @@ import CardList from '@/components/cardList/CardList'
 import './_BlogP.scss'
 import Menu from '@/components/menu/Menu'
 
-const BlogPage = () => {
+const BlogPage = ({ searchParams }) => {
+    const page = parseInt(searchParams?.page) || 1
+    const { cat } = searchParams;
     return (
         <div className='blog'>
-            <h1 className='bTitle'>Blog Page</h1>
+            <h1 className='bTitle'>{cat ? cat : 'All'} Blog</h1>
             <div className='blogContent'>
-                <CardList />
+                <CardList page={page} cat={cat} />
                 <Menu />
             </div>
         </div>

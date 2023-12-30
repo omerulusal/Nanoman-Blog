@@ -1,7 +1,7 @@
 import "./_card.scss"
 import Image from "next/image";
 import Link from "next/link";
-const Card = () => {
+const Card = ({item}) => {
     return (
         <div className='card'>
             <div className="cardImage">
@@ -18,7 +18,7 @@ const Card = () => {
                 </div>
                 <Link href="/">
                     <h1 className="cardTitle">
-                        Lorem ipsum dolor sit amet
+                        {item.title}
                     </h1>
                 </Link>
                 <div className="cardDesc">
