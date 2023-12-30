@@ -12,7 +12,7 @@ const LoginPage = () => {
                 <div className='lButton' onClick={() => signIn('google')}>
                     Sign in with Google
                 </div>
-                <div className='lButton'>
+                <div className='lButton' onClick={() => signIn('github')} >
                     Sign in with GitHub
                 </div>
                 <div className='lButton'>
@@ -24,3 +24,10 @@ const LoginPage = () => {
 }
 
 export default LoginPage
+
+/*
+
+kullanıcı butona tıklayınca signIn fonksiyonu tetiklenir ve 
+kullanıcıyı belirtilen servise oturum acması icin yonlendirir.
+
+*/
