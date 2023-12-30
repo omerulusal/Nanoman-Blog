@@ -1,30 +1,32 @@
 import "./_card.scss"
 import Image from "next/image";
 import Link from "next/link";
-const Card = ({item}) => {
+const Card = ({ item }) => {
     return (
         <div className='card'>
-            <div className="cardImage">
-                <Image alt="" src={"/travel.png"} fill className="cardImg" />
-            </div>
+            {item.img && (
+                <div className="cardImage">
+                    <Image alt="img" src={item.img} fill className="cardImg" />
+                </div>
+            )}
             <div className="cardText">
                 <div className="cardDetail">
                     <span className="cardDate">
-                        31.31.2031
+                        {item.createdAt.substring(0, 10)} {""}
                     </span>
                     <span className="cardCategory">
-                        -categorySlug
+                        - {item.catSlug}
                     </span>
                 </div>
-                <Link href="/">
+                <Link href={`/posts/${item.slug}`} >
                     <h1 className="cardTitle">
                         {item.title}
                     </h1>
                 </Link>
                 <div className="cardDesc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae possimus, perferendis excepturi itaque laborum eveniet nesciunt odio non perspiciatis accusantium est fugiat sunt natus error minima nisi saepe recusandae!
+                    {item.desc.substring(0, 60)}
                 </div>
-                <Link href="/posts" className="cardLink">
+                <Link href={`/posts/${item.slug}`} className="cardLink">
                     Read More
                 </Link>
             </div>
