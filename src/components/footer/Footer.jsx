@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='footer'>
             <div className="fInfo">
                 <div className="fLogo">
-                    <Image src={"/logo.png"} alt="logo" className='logo' width={90} height={50} />
+                    <Image src={"/logo.png"} alt="logo" className='logo' width={90} height={50} priority />
                 </div>
                 <p className='fDesc'>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus labore eveniet maiores, repudiandae dolorum veniam non aperiam dolor ut rem quam doloribus libero natus perferendis placeat ab totam maxime?
