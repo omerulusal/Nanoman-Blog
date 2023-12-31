@@ -1,8 +1,27 @@
+"use client"
 import "./_comments.scss"
 import Link from "next/link"
 import Image from "next/image"
-const Comments = () => {
-    const status = "authenticated"
+import useSWR from "swr"
+import { useSession } from "next-auth/react"
+
+
+const fetcher = async (url) => {
+    const res = await fetch(url)
+    const data = await res.json()
+    if (!res.ok) {
+        throw new Error("something went wrong");
+    }
+    return data;
+}
+
+
+const Comments = ({ postSlug }) => {
+
+    const status = useSession()
+
+    const { data, isLoading } = useSWR(`http://localhost:3000/api/comments?postSlug=${postSlug}`, fetcher)
+
     return (
         <div className="comments">
             <h1 className="cTitle">Comments</h1>
@@ -17,18 +36,20 @@ const Comments = () => {
                 </Link>
             )}
             <div className="cComments">
-                <div className="cComment">
-                    <div className="cUser">
-                        <Image alt="img" src={"/p1.jpeg"} width={50} height={50} className="cImg" />
-                        <div className="cUserInfo">
-                            <span className="cUsername" >John Doe</span>
-                            <span className="cDate" >01.01.2025</span>
+                {isLoading ? "loading..." : data?.map(item => (
+                    <div className="cComment" key={item._id}>
+                        <div className="cUser">
+                            {item?.user?.image && <Image alt="img" src={item.user.image} width={50} height={50} className="cImg" />}
+                            <div className="cUserInfo">
+                                <span className="cUsername" >{item.user.name}</span>
+                                <span className="cDate" >{item.createdAt.substring(0, 10)}</span>
+                            </div>
                         </div>
+                        <p className="cDesc">
+                            {item.desc}
+                        </p>
                     </div>
-                    <p className="cDesc">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eius similique facilis quo fugit fuga sint ullam, tempore blanditiis dolor cum nisi accusantium sequi dolore, exercitationem, est itaque? Cumque, voluptas.
-                    </p>
-                </div>
+                ))}
             </div>
         </div>
     )

@@ -28,9 +28,10 @@ const SinglePage = async ({ params }) => {
                 <div className="sTextContainer">
                     <h1 className='sTitle'>{data.title}</h1>
                     <div className='sUser'>
-                        {data?.user?.img && (
+                        {data?.user?.image && (
+                            // gmail deki resmimi ekler
                             <div className="sUserImgContainer">
-                                <Image alt='' src={data.user.img} fill className={"sAvatar"} />
+                                <Image alt='' src={data.user.image} fill className={"sAvatar"} />
                             </div>
                         )}
                         <div className='sUserTextContainer'>
@@ -47,7 +48,7 @@ const SinglePage = async ({ params }) => {
                 <div className='sPost'>
                     <div className='sDesc' dangerouslySetInnerHTML={{ __html: data?.desc }} />
                     <div className='sComments'>
-                        <Comments />
+                        <Comments postSlug={slug} />
                     </div>
                 </div>
                 <Menu />
