@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import useSWR from "swr"
 import { useSession } from "next-auth/react"
+import { useState } from "react"
 
 
 const fetcher = async (url) => {
@@ -18,17 +19,28 @@ const fetcher = async (url) => {
 
 const Comments = ({ postSlug }) => {
 
-    const status = useSession()
+    const { status } = useSession()
 
-    const { data, isLoading } = useSWR(`http://localhost:3000/api/comments?postSlug=${postSlug}`, fetcher)
+    const { data, mutate, isLoading } = useSWR(`http://localhost:3000/api/comments?postSlug=${postSlug}`, fetcher)
 
+    const [desc, setDesc] = useState()
+    const handleSubmit = async () => {
+        await fetch("http://localhost:3000/api/comments", {
+            method: "POST",
+            body: JSON.stringify({
+                desc,
+                postSlug
+            }),
+        });
+        mutate()
+    }
     return (
         <div className="comments">
             <h1 className="cTitle">Comments</h1>
             {status === "authenticated" ? (
                 <div className="cWrite">
-                    <textarea placeholder="Write a comment..." className="cInput" />
-                    <button className="cButton">Send</button>
+                    <textarea placeholder="Write a comment..." className="cInput" onChange={(e) => setDesc(e.target.value)} />
+                    <button className="cButton" onClick={handleSubmit} >Send</button>
                 </div>
             ) : (
                 <Link href="/login" className="cCommentLink">
