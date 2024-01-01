@@ -57,7 +57,7 @@ const WritePage = () => {
                 }
             );
         }
-        file && upload
+        file && upload()
     }, [file])
     if (status === "loading") {
         return <div className='loading'>Loading...</div>
