@@ -23,6 +23,7 @@ export const getAuthSession = () => getServerSession(authOptions)
 /*
 
 !!! NOT: NextAuth kütüphanesini kullanarak kimlik doğrulama işlemleri için Google ve GitHub kullanılıyor.
+!!!NOT: DOCS: https://next-auth.js.org/v3/adapters/prisma 
 
 !!! NOT: clientId: Google veya Github API tarafından sağlanan ve kimlik doğrulama servisine erişim sağlayan bir istemci kimliği
 

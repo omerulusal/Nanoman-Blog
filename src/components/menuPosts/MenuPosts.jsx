@@ -79,3 +79,7 @@ const MenuPosts = ({ withImg }) => {
 }
 
 export default MenuPosts
+
+/*
+!Eğer withImg prop'u true ise, bir resim içeren bir yapı eklenir. Resimler Image bileşeni kullanılarak gösterilir.
+*/
