@@ -4,6 +4,7 @@ import './_pagination.scss'
 import { useRouter } from 'next/navigation'
 
 const Pagination = ({ page, hasPrev, hasNext }) => {
+    // cardList.jsx ten propslar gelir
 
     const router = useRouter()
 
@@ -20,5 +21,7 @@ const Pagination = ({ page, hasPrev, hasNext }) => {
         </div>
     )
 }
-
+/*
+sayfa icerisinde ileri veya geri gidecek bir veri yoksa buton disabled olacak
+*/
 export default Pagination

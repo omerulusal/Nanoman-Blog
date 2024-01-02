@@ -8,5 +8,8 @@ const firebaseConfig = {
     appId: "1:926883999296:web:429b95fc920affe607b9a5",
     measurementId: "G-LSWE3P6SMT"
 };
-
 export const app = initializeApp(firebaseConfig);
+
+//! Kodların kaynagı: firebase > project overview > project settings > general 
+//! Firebase projeme baglanmam icin bilgilerini içerir.
+

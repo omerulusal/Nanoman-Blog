@@ -13,8 +13,11 @@ const getData = async (page, cat) => {
 }
 
 const CardList = async ({ page }) => {
+    // home page ten page propsu gelir
     const { posts, count } = await getData(page)
     const POST_PER_PAGE = 2
+    // her bir pagete 2 adet post bulunur
+
     const hasPrev = POST_PER_PAGE * (page - 1) > 0
     const hasNext = POST_PER_PAGE * (page - 1) + POST_PER_PAGE < count;
 
@@ -27,6 +30,10 @@ const CardList = async ({ page }) => {
                 ))}
             </div>
             <Pagination page={page} hasPrev={hasPrev} hasNext={hasNext} />
+            {
+                /* propslar sayesinde Paginationdaki butonlara tıklandıgında mevcut page 
+                sayısını alır ve page sayısını artırır veya azaltır */
+            }
         </div>
     )
 }
