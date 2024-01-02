@@ -6,12 +6,13 @@ import { useRouter } from 'next/navigation'
 const LoginPage = () => {
 
     const router = useRouter()
-    const { data, status } = useSession()
+    const { status } = useSession()
     if (status === "loading") {
         return <div className='loading'>Loading...</div>
     }
     if (status === "authenticated") {
         return router.push("/")
+        //kullanıcı oturumu actıysa anasayfaya yonlendirir
     }
     return (
         <div className='login'>

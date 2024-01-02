@@ -3,7 +3,6 @@ import './_singleP.scss'
 import Image from 'next/image'
 import Comments from '@/components/comments/Comments'
 
-
 const getData = async (slug) => {
     const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
         cache: 'no-store'
@@ -14,14 +13,11 @@ const getData = async (slug) => {
     return res.json()
 }
 
-
-
-
 const SinglePage = async ({ params }) => {
-
+    //params'ın anlamı urlde posts/ tan sonra gelen degerdir.
     const { slug } = params
     const data = await getData(slug)
-
+    console.log(data, "sluggggg")
     return (
         <div className='singleP'>
             <div className="sInfoContainer">
@@ -58,3 +54,7 @@ const SinglePage = async ({ params }) => {
 }
 
 export default SinglePage
+
+/*
+! Card.jsx te linke tıklanınca bu sayfa gelir, ama yanında slug parametresi de geliyor
+*/

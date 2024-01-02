@@ -4,7 +4,9 @@ import Menu from '@/components/menu/Menu'
 
 const BlogPage = ({ searchParams }) => {
     const page = parseInt(searchParams?.page) || 1
+    //! Sayfa numarasını alır, eğer yoksa veya geçerli bir sayıya çevrilemiyorsa 1 olarak atar
     const { cat } = searchParams;
+    //! Kategori bilgisini alır
     return (
         <div className='blog'>
             <h1 className='bTitle'>{cat ? cat : 'All'} Blog</h1>
