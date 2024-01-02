@@ -1,0 +1,31 @@
+.Env dosyası  environment variables(ortam değişkenlerini) tutar.
+bunun icerisinde genellikle veri tabanı ,api keyi gibi bilgiler tutulur.
+
+prisma klasoru icersindeki schema.prisma dosyasi benim veri tabanımdaki modelleri temsil eder.
+
+
+utils icerisindeki dosyalar sırasıyla : 
+1-kullanıcının oturum acmak icin kullandıgı uygulama (örn:google), 
+2-prisma ile veri tabanı baglantısı , 
+3-firebase ile dosya depolaması icin api keyi tutulur.
+
+providers klasorundeki dosyalar sırasıyla : 
+1-Kullanıcının oturum durumunun kontrolu,
+2-uygulamanın renk temasının degistirilmesi icin kullanılır,
+-BU HER IKI DOSYADA calısmasi icin layout.js dosyasını sarmalar.
+
+
+context icerisindeki ThemeContext.jsx dosyası uygulamanın temasının degistirilmesi icin kullanılır.
+
+
+components klasoru icerisinde uygulama bilesenlerini barındırır.
+
+app klasoru icerisinde uygulamanın sayfaları bulunur
+klasor adları sayfa adını temsil eder bunun icin klasordeki sayfanın adı page.js - jsx olmalıdır.
+
+
+klasor icerisindeki [slug] veya [id] adlı klasorler dinamik rotalamayı temsil eder.
+yani diyelimki blog sayfasında bir posta tıklayınca url de o postun acılmasını istersem [slug] veya [id] icerisindeki kod tetiklenir. 
+
+api klasoru uygulamanın server alanını temsil eder.
+uygulama icerisindeki create read update delete gibi olayları tanımlarız.
