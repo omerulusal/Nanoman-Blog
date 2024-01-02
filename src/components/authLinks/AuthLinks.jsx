@@ -6,7 +6,7 @@ import { signOut, useSession } from 'next-auth/react'
 const AuthLinks = () => {
 
     const {status} = useSession()
-    // ilk başta statik deger vermiştim {status} = "failed"
+    // oturumun acık olup olmadıgını temsil eder.
     
     const [open, setOpen] = useState(false)
     console.log(open)

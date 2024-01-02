@@ -8,19 +8,19 @@ const MenuCategories = () => {
                     <Link href="/blog?cat=style" className="Mstyle">
                         style
                     </Link>
-                    <Link href="/blog?cat=style" className="Mfashion">
+                    <Link href="/blog?cat=fashion" className="Mfashion">
                         fashion
                     </Link>
-                    <Link href="/blog?cat=style" className="Mfood">
+                    <Link href="/blog?cat=food" className="Mfood">
                         food
                     </Link>
-                    <Link href="/blog?cat=style" className="Mtravel">
+                    <Link href="/blog?cat=travel" className="Mtravel">
                         Travel
                     </Link>
-                    <Link href="/blog?cat=style" className="Mculture">
+                    <Link href="/blog?cat=culture" className="Mculture">
                         culture
                     </Link>
-                    <Link href="/blog?cat=style" className="Mcoding">
+                    <Link href="/blog?cat=coding" className="Mcoding">
                         coding
                     </Link>
                 </div>
