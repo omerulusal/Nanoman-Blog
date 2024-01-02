@@ -10,10 +10,11 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import { app } from "@/utils/firebase";
 
 const storage = getStorage(app);
+//firebase deposunu olusturduk(app uzerinden (app benim firebase hesap bilgimi tutuyor))
 const WritePage = () => {
     const { status } = useSession()
+    // status ile kullanıcnın oturum durumunu kontrol ediyoruz
     const router = useRouter()
-
     const [open, setOpen] = useState(false)
     const [file, setFile] = useState(null)
     const [media, setMedia] = useState("")
@@ -24,8 +25,7 @@ const WritePage = () => {
         // ! Kodları Firebase doc tan aldım
         const upload = () => {
             const storageRef = ref(storage, 'images/' + file.name);
-            const uploadTask = uploadBytesResumable(storageRef, file, metadata);
-
+            const uploadTask = uploadBytesResumable(storageRef, file);
             uploadTask.on('state_changed',
                 (snapshot) => {
                     const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
@@ -73,20 +73,27 @@ const WritePage = () => {
             body: JSON.stringify({
                 title,
                 desc: value,
+                // desc:value,ReactQuill icerisinde yazdıgım verileri temsil eder
                 img: media
             }),
         })
+        if (res.status === 200) {
+            const data = await res.json();
+            router.push(`/posts/${data.slug}`);
+        }
     }
     return (
         <div className="write">
             <input type="text" placeholder="Title" className="wTitle" onChange={e => setTitle(e.target.value)} />
             <div className="wEditor">
                 <button className="wButton" onClick={() => setOpen(!open)}>
-                    <Image src="/plus.png" alt="pen" width={20} height={20} />
+                    <Image src="/plus.png" alt="plus" width={20} height={20} />
                 </button>
                 {open && (
+                    // open true ise bu kısmı goster
                     <div className="wAdd">
                         <input type="file" className="wFile" id="image" onChange={e => setFile(e.target.files[0])} style={{ display: "none" }} />
+                        {/* gelen dosyayı setFile ile set ettim. 26.row'da gelen dosyayı firebase yolladım */}
                         <button className="wAddButton">
                             <label htmlFor="image" >
                                 <Image src="/image.png" alt="add" width={20} height={20} />
@@ -108,3 +115,8 @@ const WritePage = () => {
 }
 
 export default WritePage
+
+/*
+! ReactQuill text editorudur. yazı yazarken yazının tipini ve boyutunu özelleştrimemize yarar.
+! Bunu kullanabilmek icin temasını ve css kodunu eklemek gerekiyor.
+*/
