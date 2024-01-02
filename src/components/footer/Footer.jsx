@@ -12,17 +12,25 @@ const Footer = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus labore eveniet maiores, repudiandae dolorum veniam non aperiam dolor ut rem quam doloribus libero natus perferendis placeat ab totam maxime?
                 </p>
                 <div className="fIcons">
-                    <Image src="/facebook.png" alt="" width={18} height={18} />
-                    <Image src="/instagram.png" alt="" width={18} height={18} />
-                    <Image src="/tiktok.png" alt="" width={18} height={18} />
-                    <Image src="/youtube.png" alt="" width={18} height={18} />
+                    <Link href="https://www.facebook.com" target='_blank' >
+                        <Image src="/facebook.png" alt="" width={18} height={18} />
+                    </Link>
+                    <Link href="https://www.instagram.com" target='_blank'>
+                        <Image src="/instagram.png" alt="" width={18} height={18} />
+                    </Link>
+                    <Link href="https://www.tiktok.com" target='_blank'>
+                        <Image src="/tiktok.png" alt="" width={18} height={18} />
+                    </Link>
+                    <Link href="https://www.youtube.com" target='_blank'>
+                        <Image src="/youtube.png" alt="" width={18} height={18} />
+                    </Link>
                 </div>
             </div>
             <div className="fLinks">
                 <div className="fList">
                     <span className="fListTitle">Links</span>
                     <Link href="/">Homepage</Link>
-                    <Link href="/">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                     <Link href="/">About</Link>
                     <Link href="/">Contact</Link>
                 </div>
@@ -35,10 +43,10 @@ const Footer = () => {
                 </div>
                 <div className="fList">
                     <span className="fListTitle">Social</span>
-                    <Link href="/">Facebook</Link>
-                    <Link href="/">Instagram</Link>
-                    <Link href="/">Tiktok</Link>
-                    <Link href="/">Youtube</Link>
+                    <Link href="https://www.facebook.com" target='_blank' >Facebook</Link>
+                    <Link href="https://www.instagram.com" target='_blank'>Instagram</Link>
+                    <Link href="https://www.tiktok.com" target='_blank'>Tiktok</Link>
+                    <Link href="https://www.youtube.com" target='_blank'>Youtube</Link>
                 </div>
             </div>
         </div>

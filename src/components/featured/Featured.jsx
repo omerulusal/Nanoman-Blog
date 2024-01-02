@@ -14,9 +14,12 @@ const Featured = () => {
                     <Image className='image' src={"/p1.jpeg"} alt="img" width={420} height={400} />
                 </div>
                 <div className="textContainer">
-                    <h1 className='postTitle'>Lorem ipsum dolor sit amet.</h1>
+                    <h1 className='postTitle'>Discover Your Creativity</h1>
                     <p className='postDesc'>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum unde dolor maiores. Ea ducimus quos dicta aperiam laudantium, praesentium dolor unde voluptatibus necessitatibus tenetur porro ipsum perspiciatis aut enim alias.
+                        Soothe your soul with music, get in touch with nature, explore new places, make your dreams come true with coding and taste the flavors of 
+                        different cultures.
+                        If you are interested in these topics, you are in the right place. On this blog, you can find interesting and informative content on these 
+                        topics.
                     </p>
                     <button className='button'>Read more</button>
                 </div>

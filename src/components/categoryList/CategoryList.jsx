@@ -22,11 +22,12 @@ const CategoryList = async () => {
             <h1 className="title">Popular Categories</h1>
             <div className="categories">
                 {data?.map(item => (
-                    <Link href="/blog?cat=style" className={item.title} key={item._id}>
+                    <Link href={`/blog?cat=${item.slug}`} className={item.title} key={item._id}>
+                        {/* tıklandıgında blog uzerinden kategorisi sluge(style,fashion...) esit olana gönderilir  */}
                         {item.img && (
                             <Image
                                 src={item.img}
-                                alt=""
+                                alt="img"
                                 width={32}
                                 height={32}
                                 className="Categoryimage"

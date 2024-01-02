@@ -9,17 +9,17 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="icons">
-                <Link href={"/"}>
-                    <Image src={"/facebook.png"} alt="logo" width={20} height={20} />
+                <Link href={"https://www.facebook.com"} target='_blank'>
+                    <Image src={"/facebook.png"} alt="social" width={20} height={20} />
                 </Link>
-                <Link href={"/"}>
-                    <Image src={"/instagram.png"} alt="logo" width={20} height={20} />
+                <Link href={"https://www.instagram.com"} target='_blank'>
+                    <Image src={"/instagram.png"} alt="social" width={20} height={20} />
                 </Link>
-                <Link href={"/"}>
-                    <Image src={"/tiktok.png"} alt="logo" width={20} height={20} />
+                <Link href={"https://www.tiktok.com"} target='_blank'>
+                    <Image src={"/tiktok.png"} alt="social" width={20} height={20} />
                 </Link>
-                <Link href={"/"}>
-                    <Image src={"/youtube.png"} alt="logo" width={20} height={20} />
+                <Link href={"https://www.youtube.com"} target='_blank'>
+                    <Image src={"/youtube.png"} alt="social" width={20} height={20} />
                 </Link>
             </div>
             <div className='logo'>
