@@ -39,8 +39,8 @@ const Footer = () => {
                 </div>
                 <div className="fList">
                     <span className="fListTitle">Tags</span>
-                    <Link href="/">Style</Link>
-                    <Link href="/">Fashion</Link>
+                    <Link href="/">Music</Link>
+                    <Link href="/">Web</Link>
                     <Link href="/">Coding</Link>
                     <Link href="/">Travel</Link>
                 </div>
