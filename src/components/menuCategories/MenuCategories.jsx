@@ -5,14 +5,14 @@ const MenuCategories = () => {
         <div className='menuCategories'>
             <div className="McategoryList">
                 <div className="Mcategories">
-                    <Link href="/blog?cat=style" className="Mstyle">
-                        style
+                    <Link href="/blog?cat=style" className="Mweb">
+                        web
                     </Link>
-                    <Link href="/blog?cat=fashion" className="Mfashion">
-                        fashion
+                    <Link href="/blog?cat=fashion" className="Mmusic">
+                        Music
                     </Link>
-                    <Link href="/blog?cat=food" className="Mfood">
-                        food
+                    <Link href="/blog?cat=producing" className="Mproducing">
+                        producing
                     </Link>
                     <Link href="/blog?cat=travel" className="Mtravel">
                         Travel

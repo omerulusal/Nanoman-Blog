@@ -14,7 +14,7 @@
     }
 
 
-    .Mstyle {
+    .Mweb {
         background-color: #57c4ff31;
         display: flex;
         font-size: x-small;
@@ -29,7 +29,7 @@
         margin-bottom: 1rem;
     }
 
-    .Mfashion {
+    .Mmusic {
         background-color: #da85c731;
         display: flex;
         font-size: x-small;
@@ -45,7 +45,7 @@
 
     }
 
-    .Mfood {
+    .Mproducing {
         background-color: #7fb88133;
         display: flex;
         font-size: x-small;
@@ -113,7 +113,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .Mstyle {
+    .Mweb {
         display: flex;
         gap: 1px;
         font-size: small;
@@ -123,7 +123,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .Mstyle {
+    .Mweb {
         display: flex;
         gap: 1px;
         font-size: x-small;
@@ -131,14 +131,14 @@
         height: 45px !important;
     }
 
-    .Mfashion {
+    .Mmusic {
         gap: 1px;
         font-size: x-small;
         width: 10%;
         height: 45px !important;
     }
 
-    .Mfood {
+    .Mproducing {
         gap: 1px;
         font-size: x-small;
         width: 10%;
@@ -172,7 +172,7 @@
         flex-wrap: nowrap;
     }
 
-    .Mstyle {
+    .Mweb {
         gap: .2px !important;
         width: 7%;
         height: 45px !important;
@@ -183,7 +183,7 @@
         }
     }
 
-    .Mfashion {
+    .Mmusic {
         gap: .2px !important;
         width: 7%;
         padding: 0 5px !important;
@@ -195,7 +195,7 @@
         }
     }
 
-    .Mfood {
+    .Mproducing {
         gap: .2px !important;
         width: 7%;
         height: 45px !important;

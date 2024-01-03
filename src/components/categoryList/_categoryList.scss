@@ -11,7 +11,7 @@
     }
 
 
-    .style {
+    .web {
         background-color: #57c4ff31;
         display: flex;
         align-items: center;
@@ -23,7 +23,7 @@
         border-radius: 10px;
     }
 
-    .fashion {
+    .music {
         background-color: #da85c731;
         display: flex;
         align-items: center;
@@ -35,7 +35,7 @@
         border-radius: 10px;
     }
 
-    .food {
+    .producing {
         background-color: #7fb88133;
         display: flex;
         align-items: center;
@@ -89,7 +89,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .style {
+    .web {
         display: flex;
         gap: 1px;
         font-size: small;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .style {
+    .web {
         display: flex;
         gap: 1px;
         font-size: x-small;
@@ -107,14 +107,14 @@
         height: 45px !important;
     }
 
-    .fashion {
+    .music {
         gap: 1px;
         font-size: x-small;
         width: 10%;
         height: 45px !important;
     }
 
-    .food {
+    .producing {
         gap: 1px;
         font-size: x-small;
         width: 10%;
@@ -148,7 +148,7 @@
         flex-wrap: nowrap;
     }
 
-    .style {
+    .web {
         gap: .2px !important;
         width: 7%;
         height: 45px !important;
@@ -159,7 +159,7 @@
         }
     }
 
-    .fashion {
+    .music {
         gap: .2px !important;
         width: 7%;
         padding: 0 5px !important;
@@ -171,7 +171,7 @@
         }
     }
 
-    .food {
+    .producing {
         gap: .2px !important;
         width: 7%;
         height: 45px !important;
