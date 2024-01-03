@@ -9,7 +9,10 @@ const Footer = () => {
                     <Image src={"/logo.png"} alt="logo" className='logo' width={90} height={50} priority />
                 </div>
                 <p className='fDesc'>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus labore eveniet maiores, repudiandae dolorum veniam non aperiam dolor ut rem quam doloribus libero natus perferendis placeat ab totam maxime?
+                    Explore the world, follow your passions.
+                    Soothe your soul with music, get in touch with nature, discover new places, turn your dreams into reality with coding and taste the flavors of different cultures.
+                    <br /> On this blog, you can find engaging and informative content to help you discover the beauty of life.
+                    Stay with us and stay up to date with our innovations.
                 </p>
                 <div className="fIcons">
                     <Link href="https://www.facebook.com" target='_blank' >
