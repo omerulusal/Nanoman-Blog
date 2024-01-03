@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 
 // GET SINGLE POST
-export const GET = async ({ params }) => {
+export const GET = async (req, { params }) => {
 
     const { slug } = params;
 
