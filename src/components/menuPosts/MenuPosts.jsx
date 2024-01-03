@@ -48,7 +48,7 @@ const MenuPosts = ({ withImg }) => {
                     </div>
                 )}
                 <div className="menuPostText">
-                    <span className="menuPostFood">Food</span>
+                    <span className="menuPostProducing">Producing</span>
                     <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
@@ -66,7 +66,7 @@ const MenuPosts = ({ withImg }) => {
                     </div>
                 )}
                 <div className="menuPostText">
-                    <span className="menuPostFashion">Fashion</span>
+                    <span className="menuPostMusic">Music</span>
                     <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
