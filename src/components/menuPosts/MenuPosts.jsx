@@ -7,13 +7,13 @@ const MenuPosts = ({ withImg }) => {
             <Link href="/" className="menuPostItem">
                 {withImg && (
                     <div className="menuPostImageContainer">
-                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        <Image src={"/travel.jpg"} alt="img" fill className="menuPostImage"
                         />
                     </div>
                 )}
                 <div className="menuPostText">
                     <span className="menuPostTravel">Travel</span>
-                    <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
+                    <h3 className="menuPostTitle">Beautiful Autumn Destination in Europe:Bristol, UK</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
                         <span> -04.12.2070</span>
@@ -25,13 +25,13 @@ const MenuPosts = ({ withImg }) => {
             <Link href="/" className="menuPostItem">
                 {withImg && (
                     <div className="menuPostImageContainer">
-                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        <Image src={"/culture.jpg"} alt="img" fill className="menuPostImage"
                         />
                     </div>
                 )}
                 <div className="menuPostText">
                     <span className="menuPostCulture">Culture</span>
-                    <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
+                    <h3 className="menuPostTitle">Sicily Art Tours: The best way to explore Sicily’s cultural heritage</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
                         <span> -04.12.2070</span>
@@ -43,13 +43,13 @@ const MenuPosts = ({ withImg }) => {
             <Link href="/" className="menuPostItem">
                 {withImg && (
                     <div className="menuPostImageContainer">
-                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        <Image src={"/producing.jpg"} alt="img" fill className="menuPostImage"
                         />
                     </div>
                 )}
                 <div className="menuPostText">
                     <span className="menuPostProducing">Producing</span>
-                    <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
+                    <h3 className="menuPostTitle">Nightvision’ Solo Show with all new 6 track EP</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
                         <span> -04.12.2070</span>
@@ -61,13 +61,13 @@ const MenuPosts = ({ withImg }) => {
             <Link href="/" className="menuPostItem">
                 {withImg && (
                     <div className="menuPostImageContainer">
-                        <Image src={"/p1.jpeg"} alt="img" fill className="menuPostImage"
+                        <Image src={"/music.jpg"} alt="img" fill className="menuPostImage"
                         />
                     </div>
                 )}
                 <div className="menuPostText">
                     <span className="menuPostMusic">Music</span>
-                    <h3 className="menuPostTitle">Lorem ipsum dolor sit</h3>
+                    <h3 className="menuPostTitle">Afterlife EP</h3>
                     <div className="menuPostDetail">
                         <span>Omer Ulusal</span>
                         <span> -04.12.2070</span>
