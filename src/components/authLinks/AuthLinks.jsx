@@ -9,7 +9,6 @@ const AuthLinks = () => {
     // oturumun acık olup olmadıgını temsil eder.
     
     const [open, setOpen] = useState(false)
-    console.log(open)
     return (
         <>
             {status === "unauthenticated" ? (
@@ -31,7 +30,7 @@ const AuthLinks = () => {
                         <Link className='link' href={"/"}>Homepage</Link>
                         <Link className='link' href={"/"}>Contact</Link>
                         <Link className='link' href={"/"}>About</Link>
-                        {status === "notauthenticated" ? (
+                        {status === "unauthenticated" ? (
                             <Link className='page' href={"/login"}>Login</Link>
                         ) : (
                             <>

@@ -1,0 +1,35 @@
+Dynamic pages
+- Ornegin urunler adlı bir sayfa olusturdum ve o sayfadaki herhangi bir urune tıkladıgımda o urunun detay sayfasını gostermek istedim.
+  Bunun icin products klasoru altında [product] adlı klasor olusturup icerisinde de page.jsx dosyası olustururum.
+- Aslında url de products yazınca tum urunler gösterilirken products/random yazı yazınca [product] adlı klasordeki page.jsx acılır.
+
+
+Prisma ve Prisma studio
+- Prisma ile veri tabanı olusturulur. schema.prisma dosyasında veri tabanımdaki girdilerin modelini tanımladım.
+- Bu modeli aldıgım kaynak https://authjs.dev/reference/adapter/prisma#create-the-prisma-schema-from-scratch 
+- .env icerisindeki DATABASE_URL ile mongodb veri tabanı baglantısını schemaya ekledim. 
+- Prisma studio yu npx prisma studio ile olusturdum. Bu studio schemada belirttgim modellere kolaylıkla veri ekleyebilmemi saglar.
+
+
+
+Next Auth : Kullanıcının Oturum acıp acmadıgını kontrol eder. 
+- Kullanıcnın Google Github Facebook vb uygulamalar uzerinden kolaylıkla oturum acabilmesini saglar 
+- Kullanabilmek icin ilk olarak npm indirilir daha sonra app altında auth klasoru onunda altında [...nextauth] adlı dinamik klasor olusturulur.
+- route dosyasında Kullanıcnın oturum acma secenekleri belirtilir orn google ve github gibi.
+- Gelistricinin cloud googledan aldıgı api keyi tanımlanır ve bu route icerisine importlanır.
+- En sonda provider ile layout.js sarmalanır.(kullanıcının oturum durumunu sayfaya belirtmek icin)
+
+
+
+Google Oauth : Google uygulaması ile oturum acmak icin kullanılır.
+- ilk olarak bu urle gidilir https://console.cloud.google.com/welcome?project=next-409316 ardında da APIs & Services e Credentials kurulur.
+- Credentials olusturulurken developing asamasında kullanılan proxy adresi yazılır.
+- En sonda olusturulan API Client key ve secret key .env icerisine eklenir.
+
+
+
+Context API
+- Uygulamalarda cok fazla state kullanılması gerekince tek tek state tanımlamak yerine Context API veya redux gibi yapılar kullanılır. 
+- CPU olarak tanımlarım yani Create Provider Usecontext. context olusturulur provider olusturulup gonderilmesi gereken state veya fonskiyonlar tanımlanır.
+- En sonda provider ile layout.js sarmalanır. 
+- State veya fonksiyonları her hangi bir sayfa veya componentte kullanabilmek icinse useContext ile context cagırılır.

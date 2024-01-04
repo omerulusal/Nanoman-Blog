@@ -23,7 +23,7 @@ const CategoryList = async () => {
             <div className="categories">
                 {data?.map(item => (
                     <Link href={`/blog?cat=${item.slug}`} className={item.title} key={item._id}>
-                        {/* tıklandıgında blog uzerinden kategorisi sluge(style,fashion...) esit olana gönderilir  */}
+                        {/* tıklandıgında blog uzerinden kategorisi sluge(coding,web...) esit olana gönderilir  */}
                         {item.img && (
                             <Image
                                 src={item.img}
