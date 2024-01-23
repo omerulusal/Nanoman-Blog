@@ -21,7 +21,7 @@ const Card = ({ item }) => {
                     </span>
                 </div>
                 <Link href={`/posts/${item.slug}`} >
-                    {/* tıklandıgında posts sayfasından slug(orn: 1,2,3...) gönderilir */}
+                    {/* tıklandıgında posts sayfasına slug(orn: 1,2,3...) gönderilir */}
                     <h1 className="cardTitle">
                         {item.title}
                     </h1>

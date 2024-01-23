@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 const LoginPage = () => {
 
     const router = useRouter()
-    const { status } = useSession()
+    const { status } = useSession()//useSession ile kullanıcı oturumunu kontrol edilir
     if (status === "loading") {
         return <div className='loading'>Loading...</div>
     }
